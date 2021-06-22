@@ -1,0 +1,10 @@
+{
+  extends: ["config:base"],
+  stabilityDays: 1,
+  prCreation: "not-pending",
+  automerge: true,
+  major: {
+    automerge: false,
+  },
+  labels: ["dependencies"],
+}
