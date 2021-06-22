@@ -1,0 +1,19 @@
+---
+root: true
+
+extends:
+  - blitz
+  - plugin:tailwind/recommended
+
+plugins:
+  - "@typescript-eslint"
+
+rules:
+  jsx-a11y/alt-text: off
+  jsx-a11y/no-autofocus: off
+  no-console: [warn, allow: [info]]
+  require-await: error
+  react/jsx-key: error
+  react/no-unescaped-entities: off
+  react/self-closing-comp: error
+  "@typescript-eslint/quotes": [2, backtick, { avoidEscape: true }]
