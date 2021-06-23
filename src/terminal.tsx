@@ -1,8 +1,7 @@
 import { useEffect, useRef, useState } from 'preact/hooks'
 import { Typer } from 'src/typer'
-import SyntaxHighlighter from 'react-syntax-highlighter'
-import { a11yDark } from 'react-syntax-highlighter/dist/esm/styles/hljs'
 import { StepName, steps } from 'src/steps'
+import { HighLight, THEME } from 'preact-highlight'
 
 interface Props {
   completeStep: (step: StepName) => void
@@ -21,13 +20,12 @@ export function Terminal({ completeStep }: Props) {
 
   return (
     <div className="fixed bottom-0 w-full bg-black h-1/3">
-      <SyntaxHighlighter
+      <HighLight
+        className="h-full"
         language="javascript"
-        style={a11yDark}
-        customStyle={{ height: `100%` }}
-      >
-        {text}
-      </SyntaxHighlighter>
+        theme={THEME.monokaiSublime}
+        code={text}
+      />
     </div>
   )
 }

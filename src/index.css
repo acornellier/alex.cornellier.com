@@ -6,6 +6,8 @@
   cursor: none;
 }
 
+pre,
 code {
+  height: 100%;
   white-space: pre-wrap !important;
 }
