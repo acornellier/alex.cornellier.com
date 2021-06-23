@@ -20,7 +20,18 @@ export class Typer {
     this.setText = options.setText
     this.completeStep = options.completeStep
 
-    this.animate(0)
+    // this.start(3)
+    this.start(0)
+  }
+
+  start(stepIndex: number) {
+    if (stepIndex !== 0) {
+      this.text = steps[stepIndex - 1].cumulativeCode.split(``)
+      this.setText(this.text.join(``))
+      for (let i = 0; i < stepIndex; ++i) this.completeStep(steps[i].name)
+    }
+
+    this.animate(stepIndex)
   }
 
   animate(stepIndex: number) {

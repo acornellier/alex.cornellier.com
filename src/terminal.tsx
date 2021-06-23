@@ -19,13 +19,11 @@ export function Terminal({ completeStep }: Props) {
   }, [])
 
   return (
-    <div className="fixed bottom-0 w-full bg-black h-1/3">
-      <HighLight
-        className="h-full"
-        language="javascript"
-        theme={THEME.monokaiSublime}
-        code={text}
-      />
-    </div>
+    <HighLight
+      className="h-full"
+      language="javascript"
+      theme={THEME.monokaiSublime}
+      code={text}
+    />
   )
 }

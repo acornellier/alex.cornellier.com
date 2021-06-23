@@ -1,4 +1,4 @@
-export type StepName = `helloWorld` | `name` | `bigName` | `subtitle`
+export type StepName = `helloWorld` | `name` | `bigName` | `avatar`
 
 interface StepOptions {
   name: StepName
@@ -60,11 +60,18 @@ addStep({
 addStep({
   name: `name`,
   insertAfter: `World`,
-  code: `, I am Alex Cornellier`,
+  code: `, I am Alex Cornellier.`,
 })
 
 addStep({
   name: `bigName`,
   insertAfter: `<span`,
   code: ` className="text-3xl"`,
+})
+
+addStep({
+  name: `avatar`,
+  insertAfter: `</span>`,
+  code: `
+      <Avatar />`,
 })
