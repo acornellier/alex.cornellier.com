@@ -3,10 +3,10 @@ import { useTyper } from 'src/typer'
 import { SetStesCompleted, steps } from 'src/steps'
 import SyntaxHighlighter from 'react-syntax-highlighter'
 import { a11yDark } from 'react-syntax-highlighter/dist/esm/styles/hljs'
-import { ReactComponent as Play } from './assets/play.svg'
-import { ReactComponent as Pause } from './assets/pause.svg'
-import { ReactComponent as Back } from './assets/back.svg'
-import { ReactComponent as Forward } from './assets/forward.svg'
+import { ReactComponent as Play } from '../public/play.svg'
+import { ReactComponent as Pause } from '../public/pause.svg'
+import { ReactComponent as Back } from '../public/back.svg'
+import { ReactComponent as Forward } from '../public/forward.svg'
 
 interface Props {
   setStepsCompleted: SetStesCompleted
