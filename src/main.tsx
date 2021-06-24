@@ -1,5 +1,5 @@
-import { render } from 'preact'
+import ReactDOM from 'react-dom'
 import { App } from './app'
 import './index.css'
 
-render(<App />, document.getElementById(`app`)!)
+ReactDOM.render(<App />, document.getElementById(`app`)!)

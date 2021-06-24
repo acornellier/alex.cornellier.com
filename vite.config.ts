@@ -1,8 +1,9 @@
 import { defineConfig } from 'vite'
-import preact from '@preact/preset-vite'
+import react from 'vite-preset-react'
 import tsconfigPaths from 'vite-tsconfig-paths'
+import svgr from 'vite-plugin-svgr'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [preact(), tsconfigPaths()],
+  plugins: [react(), tsconfigPaths(), svgr()],
 })

@@ -16,4 +16,5 @@ rules:
   react/jsx-key: error
   react/no-unescaped-entities: off
   react/self-closing-comp: error
+  "@next/next/no-img-element": off
   "@typescript-eslint/quotes": [2, backtick, { avoidEscape: true }]

@@ -1,4 +1,7 @@
+import { Dispatch, SetStateAction } from 'react'
+
 export type StepName = `helloWorld` | `name` | `bigName` | `avatar`
+export type SetStesCompleted = Dispatch<SetStateAction<Set<StepName>>>
 
 interface StepOptions {
   name: StepName

@@ -14,9 +14,8 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "jsxFactory": "h",
-    "jsxFragmentFactory": "Fragment",
-    "baseUrl": "./"
+    "baseUrl": "./",
+    "types": ["vite-plugin-svgr/client"]
   },
   "include": ["src"]
 }

@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/acornellier/.fnm/node-versions/v14.16.1/installation/bin/node /var/folders/6f/xtx4d86j6vz71z0cdx3kt3400000gq/T/fnm_multishells/936_1624375182166/bin/yarn add seact-syntax-highlighter
+  /Users/acornellier/.fnm/node-versions/v14.16.1/installation/bin/node /var/folders/6f/xtx4d86j6vz71z0cdx3kt3400000gq/T/fnm_multishells/936_1624375182166/bin/yarn add framer-mation
 
 PATH: 
   /Users/acornellier/google-cloud-sdk/bin:/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin:/var/folders/6f/xtx4d86j6vz71z0cdx3kt3400000gq/T/fnm_multishells/936_1624375182166/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/seact-syntax-highlighter: Not found
+  Error: https://registry.yarnpkg.com/framer-mation: Not found
       at Request.params.callback [as _callback] (/Users/acornellier/.fnm/node-versions/v14.16.1/installation/lib/node_modules/yarn/lib/cli.js:66988:18)
       at Request.self.callback (/Users/acornellier/.fnm/node-versions/v14.16.1/installation/lib/node_modules/yarn/lib/cli.js:140662:22)
       at Request.emit (events.js:315:20)
@@ -44,7 +44,9 @@ npm manifest:
       "trailingComma": "all"
     },
     "dependencies": {
-      "preact": "10.5.13"
+      "clsx": "1.1.1",
+      "preact": "10.5.13",
+      "preact-highlight": "1.1.3"
     },
     "devDependencies": {
       "@preact/preset-vite": "2.1.0",
@@ -59,7 +61,7 @@ npm manifest:
       "tailwindcss": "2.2.2",
       "typescript": "4.3.4",
       "vite": "2.3.8",
-      "vite-tsconfig-paths": "^3.3.13"
+      "vite-tsconfig-paths": "3.3.13"
     }
   }
 
@@ -848,6 +850,11 @@ Lockfile:
     version "2.2.1"
     resolved "https://registry.yarnpkg.com/cli-width/-/cli-width-2.2.1.tgz#b0433d0b4e9c847ef18868a4ef16fd5fc8271c48"
     integrity sha512-GRMWDxpOB6Dgk2E5Uo+3eEBvtOOlimMmpbFiKuLFnQzYDavtLFY3K5ona41jgN/WdRZtG7utuVSVTL4HbZHGkw==
+  
+  clsx@1.1.1:
+    version "1.1.1"
+    resolved "https://registry.yarnpkg.com/clsx/-/clsx-1.1.1.tgz#98b3134f9abbdf23b2663491ace13c5c03a73188"
+    integrity sha512-6/bPho624p3S2pMyvP5kKBPXnI3ufHLObBFCfgx+LkeR5lg2XYy2hqZqUf45ypD8COn2bhgGJSUE+l5dhNBieA==
   
   color-convert@^1.9.0, color-convert@^1.9.1:
     version "1.9.3"
@@ -1728,6 +1735,11 @@ Lockfile:
     dependencies:
       function-bind "^1.1.1"
   
+  highlight.js@^9.12.0:
+    version "9.18.5"
+    resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-9.18.5.tgz#d18a359867f378c138d6819edfc2a8acd5f29825"
+    integrity sha512-a5bFyofd/BHCX52/8i8uJkjr9DYwXIPnM/plwI6W7ezItLGqzt7X2G2nXuYSfsIJdkwwj/g9DG1LkcGJI/dDoA==
+  
   hosted-git-info@^2.1.4:
     version "2.8.9"
     resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.8.9.tgz#dffc0bf9a21c02209090f2aa69429e1414daf3f9"
@@ -2493,6 +2505,13 @@ Lockfile:
       nanoid "^3.1.23"
       source-map-js "^0.6.2"
   
+  preact-highlight@1.1.3:
+    version "1.1.3"
+    resolved "https://registry.yarnpkg.com/preact-highlight/-/preact-highlight-1.1.3.tgz#0ecbde5ffef4041bb274c56d76349338bd5b4c1c"
+    integrity sha1-DsveX/70BBuydMVtdjSTOL1bTBw=
+    dependencies:
+      highlight.js "^9.12.0"
+  
   preact@10.5.13:
     version "10.5.13"
     resolved "https://registry.yarnpkg.com/preact/-/preact-10.5.13.tgz#85f6c9197ecd736ce8e3bec044d08fd1330fa019"
@@ -3155,7 +3174,7 @@ Lockfile:
       spdx-correct "^3.0.0"
       spdx-expression-parse "^3.0.0"
   
-  vite-tsconfig-paths@^3.3.13:
+  vite-tsconfig-paths@3.3.13:
     version "3.3.13"
     resolved "https://registry.yarnpkg.com/vite-tsconfig-paths/-/vite-tsconfig-paths-3.3.13.tgz#a9e60aa3759799f3035581de8e4bb00215f039f6"
     integrity sha512-G7OO+1g2H6xVN61RIp1xFjvciqJoF5cGKcWfP6ZOZFeA8QRy2X7yaGUZLhXtKxNLEsR2MthDm7KwSNTKQHzwvA==
