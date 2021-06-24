@@ -36,7 +36,7 @@ export function Terminal({ setStepsCompleted }: Props) {
   })
 
   return (
-    <div className="fixed bottom-0 left-0 w-full lg:w-1/3 h-1/3 lg:h-full">
+    <>
       <div className="flex justify-center h-16 text-white">
         <Button onClick={() => typer.back()}>
           <Back height="100%" />
@@ -55,6 +55,6 @@ export function Terminal({ setStepsCompleted }: Props) {
       >
         {text}
       </SyntaxHighlighter>
-    </div>
+    </>
   )
 }

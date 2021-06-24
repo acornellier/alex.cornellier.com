@@ -168,6 +168,20 @@ export const useTyper = ({ steps, setStepsCompleted }: UseTyperProps) => {
   )
 
   useEffect(() => {
+    document.addEventListener(`keydown`, (e) => {
+      switch (e.key) {
+        case ` `:
+          typer.pausePlay()
+          break
+        case `ArrowLeft`:
+          typer.back()
+          break
+        case `ArrowRight`:
+          typer.forward()
+          break
+      }
+    })
+
     return () => typer.terminate()
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [typer])

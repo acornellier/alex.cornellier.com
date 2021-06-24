@@ -7,7 +7,7 @@ import { Avatar } from 'src/avatar'
 import { AnimatePresence, AnimateSharedLayout, motion } from 'framer-motion'
 
 export function App() {
-  const [s, setStepsCompleted] = useState<Set<StepName>>(new Set())
+  const [s, setStepsCompleted] = useState(new Set<StepName>())
 
   return (
     <AnimateSharedLayout>
@@ -30,7 +30,9 @@ export function App() {
           <Avatar show={s.has(`avatar`)} />
         </div>
 
-        <Terminal {...{ setStepsCompleted }} />
+        <div className="fixed bottom-0 left-0 w-full lg:w-1/3 h-1/3 lg:h-full">
+          <Terminal {...{ setStepsCompleted }} />
+        </div>
       </div>
       <Cursor />
     </AnimateSharedLayout>
