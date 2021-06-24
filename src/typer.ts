@@ -163,13 +163,14 @@ interface UseTyperProps {
 export const useTyper = ({ steps, setStepsCompleted }: UseTyperProps) => {
   const [text, setText] = useState(``)
   const [paused, setPaused] = useState(false)
-  const typer = useRef<Typer | null>(null)
+  const [typer] = useState(
+    () => new Typer({ steps, setText, setPaused, setStepsCompleted }),
+  )
 
   useEffect(() => {
-    typer.current = new Typer({ steps, setText, setPaused, setStepsCompleted })
-    return () => typer.current?.terminate()
+    return () => typer.terminate()
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  }, [typer])
 
-  return { typer: typer.current, text, paused }
+  return { typer, text, paused }
 }

@@ -38,13 +38,13 @@ export function Terminal({ setStepsCompleted }: Props) {
   return (
     <div className="fixed bottom-0 left-0 w-full lg:w-1/3 h-1/3 lg:h-full">
       <div className="flex justify-center h-16 text-white">
-        <Button onClick={() => typer?.back()}>
+        <Button onClick={() => typer.back()}>
           <Back height="100%" />
         </Button>
-        <Button onClick={() => typer?.pausePlay()}>
+        <Button onClick={() => typer.pausePlay()}>
           {paused ? <Play height="100%" /> : <Pause height="100%" />}
         </Button>
-        <Button onClick={() => typer?.forward()}>
+        <Button onClick={() => typer.forward()}>
           <Forward height="100%" />
         </Button>
       </div>
