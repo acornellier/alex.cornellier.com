@@ -1311,10 +1311,10 @@ escape-string-regexp@^4.0.0:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz#14ba83a5d373e3d311e5afca29cf5bfad965bf34"
   integrity sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==
 
-eslint-config-blitz@0.38.5:
-  version "0.38.5"
-  resolved "https://registry.yarnpkg.com/eslint-config-blitz/-/eslint-config-blitz-0.38.5.tgz#f3c339a4a223cee775f1377d228255e4812588a1"
-  integrity sha512-FgKZTIBcAY5gxc971GITbDQ3Ce2rcvm53vr+J4r2EOgQARggiS+Zfz6fEOiLXrbjj3iYiWkM7bhCLE4ie62dcA==
+eslint-config-blitz@0.38.6:
+  version "0.38.6"
+  resolved "https://registry.yarnpkg.com/eslint-config-blitz/-/eslint-config-blitz-0.38.6.tgz#3884ee2d2aec90bfab5f7d44fdd8e33802e53974"
+  integrity sha512-rphNdUxs03Ivy/p0/V5ODPCAusL7TlW2cVb5RbYktqggm0XJl+PDixawoKViwr91sAIz9CtJFyNggrryWGNoKQ==
   dependencies:
     "@typescript-eslint/eslint-plugin" "4.17.0"
     eslint-config-next "^11.0.0"

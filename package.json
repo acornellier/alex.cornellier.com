@@ -29,7 +29,7 @@
     "@typescript-eslint/eslint-plugin": "4.28.4",
     "autoprefixer": "10.3.1",
     "eslint": "7.31.0",
-    "eslint-config-blitz": "0.38.5",
+    "eslint-config-blitz": "0.38.6",
     "eslint-plugin-tailwind": "0.2.1",
     "postcss": "8.3.6",
     "prettier": "2.3.2",
