@@ -3519,10 +3519,10 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
-vite-plugin-svgr@0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/vite-plugin-svgr/-/vite-plugin-svgr-0.3.0.tgz#c81ac7541df98d361249f9ac06b901ae22744a1b"
-  integrity sha512-C3g+lbn0dsSL+QERO+WGXYv3qdc0Fwa4MC+Lk6hGM7wlvRXU7C1kzITjFkO+Zai8Cymrt+5uZYHJhxiQ96shtw==
+vite-plugin-svgr@0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/vite-plugin-svgr/-/vite-plugin-svgr-0.4.0.tgz#f9cebfde9000bbe4c699ab13182fe867d0f1bdcc"
+  integrity sha512-aNhPEYxn2L4m1lOvUpJksMPxNZbYBq1npnMhi6D5HUykBV03bVmcu3WGHZ50lIYr0CC5t+yEvck8hNbHOOgKxg==
   dependencies:
     "@svgr/core" "^5.5.0"
 
